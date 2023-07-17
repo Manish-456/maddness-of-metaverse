@@ -7,6 +7,7 @@ import { fadeIn, planetVariants, staggerContainer } from '@/utils/motion';
 import styles from '@/app/styles';
 import { newFeatures } from '@/constants';
 import NewFeature from './NewFeature';
+import Image from 'next/image';
 
 export default function New() {
   return (
@@ -41,7 +42,9 @@ export default function New() {
           variants={planetVariants("right")}
           className={`flex-1 ${styles.flexCenter}`}
         >
-          <img
+          <Image 
+           width={500}
+           height={500}
             src="/whats-new.png"
             alt="whatnew "
             className="w-[90%] h-[90%] object-contain"

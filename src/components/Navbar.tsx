@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { navVariants } from "@/utils/motion";
 import styles from "@/app/styles";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -16,12 +17,12 @@ export default function Navbar() {
         <div
           className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
         >
-          <img src="./search.svg" alt="search" className="h-6 w-6 object-contain" />
+          <Image height={100} width={100} src="./search.svg" alt="search" className="h-6 w-6 object-contain" />
          <h2 className="font-bold text-white text-[24px]">
             METAVERSUS
          </h2>
 
-         <img src="/menu.svg" alt="menu" className="h-6 w-6 object-contain cursor-pointer"/>
+         <Image height={100} width={100} src="/menu.svg" alt="menu" className="h-6 w-6 object-contain cursor-pointer"/>
       </div>
     </motion.nav>
   );

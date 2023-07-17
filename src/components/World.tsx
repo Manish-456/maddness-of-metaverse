@@ -5,6 +5,7 @@ import { TitleText, TypingText } from '.'
 import styles from '@/app/styles'
 import {motion} from 'framer-motion';
 import { fadeIn, staggerContainer } from '@/utils/motion';
+import Image from 'next/image';
 export default function World() {
   return (
     <section className={`${styles.paddings} relative z-10`}>
@@ -22,15 +23,15 @@ export default function World() {
          <motion.div variants={fadeIn('up', 'tween', 0.3, 1)}
          className='mt-[68px] relative flex w-full h-[550px]'
          >
-    <img src="/map.png" alt="map" className='w-full h-full object-cover' />
+    <Image height={50} width={50} src="/map.png" alt="map" className='w-full h-full object-cover' />
        <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-        <img src="/people-01.png" alt="people" className='w-full h-full'/>
+        <Image height={50} width={50} src="/people-01.png" alt="people" className='w-full h-full'/>
        </div>
        <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-        <img src="/people-02.png" alt="people-02" className='w-full h-full'/>
+        <Image height={50} width={50} src="/people-02.png" alt="people-02" className='w-full h-full'/>
        </div>
        <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-        <img src="/people-03.png" alt="people-03" className='w-full h-full'/>
+        <Image height={50} width={50} src="/people-03.png" alt="people-03" className='w-full h-full'/>
        </div>
   
          </motion.div>
