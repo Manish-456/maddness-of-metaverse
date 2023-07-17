@@ -26,7 +26,7 @@ export default function New() {
         >
           <TypingText title={"| What's New?"} textStyles="" />
           <TitleText
-            title={<>What's new about Metaversus?</>}
+            title={<>What&apos;s new about Metaversus?</>}
             textStyles=""
           />
   <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
